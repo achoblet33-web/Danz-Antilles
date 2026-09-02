@@ -28,6 +28,8 @@ jobs:
           VITE_SUPABASE_URL: https://axewfeanyfxkzercafen.supabase.co
           VITE_SUPABASE_ANON_KEY: sb_publishable_MknXpC-LmMbjHfv2ALiVag_km2DNMMw
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
